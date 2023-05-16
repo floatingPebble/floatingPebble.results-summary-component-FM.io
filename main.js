@@ -6,7 +6,7 @@ fetch('./data.json')
         ul[0].appendChild(li);
         li.className = e.category === "Reaction" ? "red" : e.category === "Memory" ? "orange" : e.category === "Verbal" ? "green" : "blue";
         li.innerHTML = `<div class="iconAndDetail">
-                            <img  src="images/icon-${e.category.toLowerCase()}.svg" ></img>
+                            <img  src="images/icon-${e.category.toLowerCase()}.svg" alt="${e.category} icon"></img>
                             <p class="${e.category.toLowerCase()}">${e.category}</p>
                         </div>
                         <p class="yourScore">${e.score}</p>`
